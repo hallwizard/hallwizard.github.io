@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://hallwizard.gitee.io</id>
     <title>hallwizard</title>
-    <updated>2021-10-06T06:44:50.348Z</updated>
+    <updated>2021-10-06T06:47:59.508Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://hallwizard.gitee.io"/>
     <link rel="self" href="https://hallwizard.gitee.io/atom.xml"/>
@@ -10,15 +10,6 @@
     <logo>https://hallwizard.gitee.io/images/avatar.png</logo>
     <icon>https://hallwizard.gitee.io/favicon.ico</icon>
     <rights>All rights reserved 2021, hallwizard</rights>
-    <entry>
-        <title type="html"><![CDATA[test]]></title>
-        <id>https://hallwizard.gitee.io/post/test/</id>
-        <link href="https://hallwizard.gitee.io/post/test/">
-        </link>
-        <updated>2021-10-06T06:39:14.000Z</updated>
-        <content type="html"><![CDATA[<p>test</p>
-]]></content>
-    </entry>
     <entry>
         <title type="html"><![CDATA[Lnmp+Wordpress急速部署]]></title>
         <id>https://hallwizard.gitee.io/post/lnmpwordpress-ji-su-bu-shu/</id>
