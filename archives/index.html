@@ -1,0 +1,240 @@
+<html>
+  <head>
+    
+<meta charset="utf-8" >
+
+<title>hallwizard</title>
+<meta name="description" content="Talk is cheap, Just do it!">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://hallwizard.gitee.io/favicon.ico?v=1633502626910">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://hallwizard.gitee.io/styles/main.css">
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+  </head>
+  <body>
+    <div id="app" class="main">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://hallwizard.gitee.io">
+        <img class="avatar" src="https://hallwizard.gitee.io/images/avatar.png?v=1633502626910" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://hallwizard.gitee.io">
+        <h1 class="site-title">hallwizard</h1>
+      </a>
+    </div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
+  </div>
+</div>
+
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
+      
+        
+          <a href="/" class="menu purple-link">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="menu purple-link">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="menu purple-link">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="menu purple-link">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+</transition>
+
+
+        <div class="content-container">
+          
+          
+
+<div class="archives-container">
+  
+    <h2 class="year">2021</h2>
+    
+      
+        <article class="post">
+          <a href="https://hallwizard.gitee.io/post/test/">
+            <h2 class="post-title">
+              test
+              <small>2021-10-06</small>
+            </h2>
+          </a>
+        </article>
+      
+    
+      
+        <article class="post">
+          <a href="https://hallwizard.gitee.io/post/lnmpwordpress-ji-su-bu-shu/">
+            <h2 class="post-title">
+              Lnmp+Wordpress急速部署
+              <small>2021-10-06</small>
+            </h2>
+          </a>
+        </article>
+      
+    
+      
+        <article class="post">
+          <a href="https://hallwizard.gitee.io/post/lesslessliang-xin-dao-nan-yi-zhi-xin-de-wang-zhan-tui-jian-greatergreater/">
+            <h2 class="post-title">
+              《良心到难以置信的网站推荐》
+              <small>2021-10-05</small>
+            </h2>
+          </a>
+        </article>
+      
+    
+      
+        <article class="post">
+          <a href="https://hallwizard.gitee.io/post/pdf-zhuan-word-de-hao-yong-wang-zhan/">
+            <h2 class="post-title">
+              PDF 转 WORD的好用网站
+              <small>2021-10-05</small>
+            </h2>
+          </a>
+        </article>
+      
+    
+      
+        <article class="post">
+          <a href="https://hallwizard.gitee.io/post/ren-kou-yan-jiu-ke-pu/">
+            <h2 class="post-title">
+              人口预测研究
+              <small>2021-10-05</small>
+            </h2>
+          </a>
+        </article>
+      
+    
+      
+        <article class="post">
+          <a href="https://hallwizard.gitee.io/post/cai-jing-xin-wen-tui-song/">
+            <h2 class="post-title">
+              财经新闻推送
+              <small>2021-10-04</small>
+            </h2>
+          </a>
+        </article>
+      
+    
+      
+        <article class="post">
+          <a href="https://hallwizard.gitee.io/post/cai-jing-shu-ju-jie-kou-zheng-li/">
+            <h2 class="post-title">
+              财经数据接口整理
+              <small>2021-10-04</small>
+            </h2>
+          </a>
+        </article>
+      
+    
+      
+        <article class="post">
+          <a href="https://hallwizard.gitee.io/post/jiao-cheng-zui-xin-zhu-ce-freenom-mian-fei-yu-ming-de-fang-fa/">
+            <h2 class="post-title">
+              【教程】最新注册freenom免费域名的方法
+              <small>2021-10-04</small>
+            </h2>
+          </a>
+        </article>
+      
+    
+      
+        <article class="post">
+          <a href="https://hallwizard.gitee.io/post/giteegithub-pages-tong-bu/">
+            <h2 class="post-title">
+              Gitee、Github pages 同步
+              <small>2021-10-04</small>
+            </h2>
+          </a>
+        </article>
+      
+    
+      
+        <article class="post">
+          <a href="https://hallwizard.gitee.io/post/first-things-first/">
+            <h2 class="post-title">
+              First things First
+              <small>2021-10-03</small>
+            </h2>
+          </a>
+        </article>
+      
+    
+  
+</div>
+
+
+        </div>
+
+        <div class="site-footer">
+  <div class="slogan">Talk is cheap, Just do it!</div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://hallwizard.gitee.io/atom.xml" target="_blank">RSS</a>
+</div>
+
+
+      </div>
+      <script type="application/javascript">
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+    </div>
+  </body>
+</html>

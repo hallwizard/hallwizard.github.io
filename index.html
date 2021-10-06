@@ -1,0 +1,310 @@
+
+<html>
+  <head>
+    
+<meta charset="utf-8" >
+
+<title>hallwizard</title>
+<meta name="description" content="Talk is cheap, Just do it!">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://hallwizard.gitee.io/favicon.ico?v=1633502626910">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://hallwizard.gitee.io/styles/main.css">
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+  </head>
+  <body>
+    <div id="app" class="main">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://hallwizard.gitee.io">
+        <img class="avatar" src="https://hallwizard.gitee.io/images/avatar.png?v=1633502626910" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://hallwizard.gitee.io">
+        <h1 class="site-title">hallwizard</h1>
+      </a>
+    </div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
+  </div>
+</div>
+
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
+      
+        
+          <a href="/" class="menu purple-link">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="menu purple-link">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="menu purple-link">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="menu purple-link">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+</transition>
+
+
+      <div class="content-container">
+        
+        
+<section class="post-item">
+    <div class="content">
+      <a href="https://hallwizard.gitee.io/post/test/">
+        <h2 class="post-title">test</h2>
+      </a>
+      <div class="post-abstract">
+        
+      </div>
+      <div class="post-info">
+        <span><i class="icon icon-calendar-outline"></i> 2021-10-06</span>
+        
+      </div>
+    </div>
+    
+  </section>
+
+<section class="post-item">
+    <div class="content">
+      <a href="https://hallwizard.gitee.io/post/lnmpwordpress-ji-su-bu-shu/">
+        <h2 class="post-title">Lnmp+Wordpress急速部署</h2>
+      </a>
+      <div class="post-abstract">
+        
+      </div>
+      <div class="post-info">
+        <span><i class="icon icon-calendar-outline"></i> 2021-10-06</span>
+        
+      </div>
+    </div>
+    
+  </section>
+
+<section class="post-item">
+    <div class="content">
+      <a href="https://hallwizard.gitee.io/post/lesslessliang-xin-dao-nan-yi-zhi-xin-de-wang-zhan-tui-jian-greatergreater/">
+        <h2 class="post-title">《良心到难以置信的网站推荐》</h2>
+      </a>
+      <div class="post-abstract">
+        
+      </div>
+      <div class="post-info">
+        <span><i class="icon icon-calendar-outline"></i> 2021-10-05</span>
+        
+      </div>
+    </div>
+    
+  </section>
+
+<section class="post-item">
+    <div class="content">
+      <a href="https://hallwizard.gitee.io/post/pdf-zhuan-word-de-hao-yong-wang-zhan/">
+        <h2 class="post-title">PDF 转 WORD的好用网站</h2>
+      </a>
+      <div class="post-abstract">
+        
+      </div>
+      <div class="post-info">
+        <span><i class="icon icon-calendar-outline"></i> 2021-10-05</span>
+        
+      </div>
+    </div>
+    
+      <a href="https://hallwizard.gitee.io/post/pdf-zhuan-word-de-hao-yong-wang-zhan/">
+        <div class="feature-container" style="background-image: url('https://pdf2docx.com/images/pdf2docx/logo.svg')">
+        </div>
+      </a>
+    
+  </section>
+
+<section class="post-item">
+    <div class="content">
+      <a href="https://hallwizard.gitee.io/post/ren-kou-yan-jiu-ke-pu/">
+        <h2 class="post-title">人口预测研究</h2>
+      </a>
+      <div class="post-abstract">
+        
+      </div>
+      <div class="post-info">
+        <span><i class="icon icon-calendar-outline"></i> 2021-10-05</span>
+        
+      </div>
+    </div>
+    
+  </section>
+
+<section class="post-item">
+    <div class="content">
+      <a href="https://hallwizard.gitee.io/post/cai-jing-xin-wen-tui-song/">
+        <h2 class="post-title">财经新闻推送</h2>
+      </a>
+      <div class="post-abstract">
+        
+      </div>
+      <div class="post-info">
+        <span><i class="icon icon-calendar-outline"></i> 2021-10-04</span>
+        
+      </div>
+    </div>
+    
+  </section>
+
+<section class="post-item">
+    <div class="content">
+      <a href="https://hallwizard.gitee.io/post/cai-jing-shu-ju-jie-kou-zheng-li/">
+        <h2 class="post-title">财经数据接口整理</h2>
+      </a>
+      <div class="post-abstract">
+        
+      </div>
+      <div class="post-info">
+        <span><i class="icon icon-calendar-outline"></i> 2021-10-04</span>
+        
+      </div>
+    </div>
+    
+  </section>
+
+<section class="post-item">
+    <div class="content">
+      <a href="https://hallwizard.gitee.io/post/jiao-cheng-zui-xin-zhu-ce-freenom-mian-fei-yu-ming-de-fang-fa/">
+        <h2 class="post-title">【教程】最新注册freenom免费域名的方法</h2>
+      </a>
+      <div class="post-abstract">
+        
+      </div>
+      <div class="post-info">
+        <span><i class="icon icon-calendar-outline"></i> 2021-10-04</span>
+        
+      </div>
+    </div>
+    
+      <a href="https://hallwizard.gitee.io/post/jiao-cheng-zui-xin-zhu-ce-freenom-mian-fei-yu-ming-de-fang-fa/">
+        <div class="feature-container" style="background-image: url('https://pic1.zhimg.com/v2-8f8ce02264ad811762283a341d66c0b9_1440w.jpg?source=172ae18b')">
+        </div>
+      </a>
+    
+  </section>
+
+<section class="post-item">
+    <div class="content">
+      <a href="https://hallwizard.gitee.io/post/giteegithub-pages-tong-bu/">
+        <h2 class="post-title">Gitee、Github pages 同步</h2>
+      </a>
+      <div class="post-abstract">
+        
+      </div>
+      <div class="post-info">
+        <span><i class="icon icon-calendar-outline"></i> 2021-10-04</span>
+        
+      </div>
+    </div>
+    
+      <a href="https://hallwizard.gitee.io/post/giteegithub-pages-tong-bu/">
+        <div class="feature-container" style="background-image: url('https://pic2.zhimg.com/v2-2feaf19d4e89370df72a463165723d15_1440w.jpg?source=172ae18b')">
+        </div>
+      </a>
+    
+  </section>
+
+<section class="post-item">
+    <div class="content">
+      <a href="https://hallwizard.gitee.io/post/first-things-first/">
+        <h2 class="post-title">First things First</h2>
+      </a>
+      <div class="post-abstract">
+        <p>感谢Happy_Xiao在B站发布的教程：<br>
+https://www.bilibili.com/video/BV1J4411w72a?from=search&amp;seid=2341783892831132438&amp;spm_id_from=333.337.0.0</p>
+
+      </div>
+      <div class="post-info">
+        <span><i class="icon icon-calendar-outline"></i> 2021-10-03</span>
+        
+      </div>
+    </div>
+    
+      <a href="https://hallwizard.gitee.io/post/first-things-first/">
+        <div class="feature-container" style="background-image: url('https://i1.hdslb.com/bfs/face/6f0d7bd59641d39566eeb5ba0b928ea5d751946c.jpg@128w_128h_1o.webp')">
+        </div>
+      </a>
+    
+  </section>
+
+
+<div class="pagination-container">
+  
+  
+</div>
+
+
+      </div>
+
+      <div class="site-footer">
+  <div class="slogan">Talk is cheap, Just do it!</div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://hallwizard.gitee.io/atom.xml" target="_blank">RSS</a>
+</div>
+
+
+    </div>
+    <script type="application/javascript">
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+  </body>
+</html>

@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    
+<meta charset="utf-8" >
+
+<title>财经新闻推送 | hallwizard</title>
+<meta name="description" content="Talk is cheap, Just do it!">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://hallwizard.gitee.io/favicon.ico?v=1633502626910">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://hallwizard.gitee.io/styles/main.css">
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+  </head>
+  <body>
+    <div id="app" class="main">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://hallwizard.gitee.io">
+        <img class="avatar" src="https://hallwizard.gitee.io/images/avatar.png?v=1633502626910" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://hallwizard.gitee.io">
+        <h1 class="site-title">hallwizard</h1>
+      </a>
+    </div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
+  </div>
+</div>
+
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
+      
+        
+          <a href="/" class="menu purple-link">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="menu purple-link">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="menu purple-link">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="menu purple-link">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+</transition>
+
+
+      <div class="content-container">
+        <div class="post-detail">
+          
+          <h2 class="post-title">财经新闻推送</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2021-10-04</span>
+            
+          </div>
+          <div class="post-content">
+            <p>货币净投放与净回笼<br>
+http://www.chinamoney.com.cn/chinese/hb/</p>
+<p>上证50权重-问财<br>
+http://www.iwencai.com/stockpick/search?typed=1&amp;preParams=&amp;ts=1&amp;f=1&amp;qs=index_rewrite&amp;selfsectsn=&amp;querytype=stock&amp;searchfilter=&amp;tid=stockpick&amp;w=%E4%B8%8A%E8%AF%8150%E6%9D%83%E9%87%8D</p>
+<p>股指期货仓单<br>
+http://data.eastmoney.com/IF/Data/Contract.html?va=IH</p>
+<p>萝卜投研<br>
+https://robo.datayes.com/</p>
+<p>Tushare资讯数据<br>
+https://tushare.pro/news</p>
+<p>金融界 7*24小时财经要闻滚动<br>
+http://finance.jrj.com.cn/yaowen/<br>
+大盘云图<br>
+http://summary.jrj.com.cn/dpyt/</p>
+<p>云财经<br>
+https://www.yuncaijing.com/</p>
+<p>选股宝<br>
+https://xuangubao.cn/</p>
+<p>见智研究<br>
+https://vip.jianshiapp.com/live</p>
+<p>微博舆情<br>
+https://touzi.sina.com.cn/public/wbyq</p>
+<p>财联社电报<br>
+https://www.cls.cn/telegraph</p>
+<p>今日热榜<br>
+https://tophub.today/</p>
+<p>鱼塘热榜<br>
+https://mo.fish/</p>
+
+          </div>
+        </div>
+
+        
+          <div class="next-post">
+            <a class="purple-link" href="https://hallwizard.gitee.io/post/cai-jing-shu-ju-jie-kou-zheng-li/">
+              <h3 class="post-title">
+                下一篇：财经数据接口整理
+              </h3>
+            </a>
+          </div>
+          
+      </div>
+
+      
+
+      <div class="site-footer">
+  <div class="slogan">Talk is cheap, Just do it!</div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://hallwizard.gitee.io/atom.xml" target="_blank">RSS</a>
+</div>
+
+
+    </div>
+    <script type="application/javascript">
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+  </body>
+</html>

@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://hallwizard.gitee.io</id>
+    <title>hallwizard</title>
+    <updated>2021-10-06T06:43:49.899Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://hallwizard.gitee.io"/>
+    <link rel="self" href="https://hallwizard.gitee.io/atom.xml"/>
+    <subtitle>Talk is cheap, Just do it!</subtitle>
+    <logo>https://hallwizard.gitee.io/images/avatar.png</logo>
+    <icon>https://hallwizard.gitee.io/favicon.ico</icon>
+    <rights>All rights reserved 2021, hallwizard</rights>
+    <entry>
+        <title type="html"><![CDATA[test]]></title>
+        <id>https://hallwizard.gitee.io/post/test/</id>
+        <link href="https://hallwizard.gitee.io/post/test/">
+        </link>
+        <updated>2021-10-06T06:39:14.000Z</updated>
+        <content type="html"><![CDATA[<p>test</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Lnmp+Wordpress急速部署]]></title>
+        <id>https://hallwizard.gitee.io/post/lnmpwordpress-ji-su-bu-shu/</id>
+        <link href="https://hallwizard.gitee.io/post/lnmpwordpress-ji-su-bu-shu/">
+        </link>
+        <updated>2021-10-05T16:03:34.000Z</updated>
+        <content type="html"><![CDATA[<p>单机部署，没用上Ansible，lnmp方便<br>
+安装有点慢啊，等有空再想想解决方法<br>
+Install lnmp takes 91 minutes.<br>
+Install lnmp V1.8 completed! enjoy it.</p>
+<ol>
+<li></li>
+</ol>
+<p>先配置网卡，保障虚拟机联网:<br>
+vi /etc/sysconfig/network-scripts/ifcfg-eno16777736<br>
+增加网关和DNS：<br>
+GATEWAY=192.168.200.2<br>
+DNS1=8.8.8.8</p>
+<ol start="2">
+<li></li>
+</ol>
+<p>安装lnmp<br>
+参考：<br>
+https://github.com/licess/lnmp</p>
+<p>安装前确认已经安装wget命令，如提示wget: command not found ，使用yum install wget 或 apt-get install wget 命令安装。 为防止掉线等情况，建议使用screen，可以先执行：screen -S lnmp 命令后，再执行LNMP安装命令： wget http://soft.vpser.net/lnmp/lnmp1.8.tar.gz -cO lnmp1.8.tar.gz &amp;&amp; tar zxf lnmp1.8.tar.gz &amp;&amp; cd lnmp1.8 &amp;&amp; ./install.sh {lnmp|lnmpa|lamp}</p>
+<ol start="3">
+<li></li>
+</ol>
+<p>安装Wordpress<br>
+下载wordpress 上传 解压<br>
+unzip wordpress-5.8.1-zh_CN.zip<br>
+mkdir /home/wwwroot/default/wordpress<br>
+mv wordpress/* /home/wwwroot/default/wordpress/<br>
+登录网页<br>
+http://yourIP/wordpress<br>
+完成设置<br>
+如果无法写入wp-config.php<br>
+vi /home/wwwroot/default/wordpress/wp-config.php<br>
+将网页内容复制写入，后面加上?&gt;<br>
+成功</p>
+<p>还是挺简单，之前研究html+css+js，前端没学会，学会了爬虫，没想到wordpress这么好用，早点入坑好了，安装完成，接下来慢慢研究。</p>
+<p>附：<br>
+lnmp常用管理命令<br>
+状态管理<br>
+LNMP/LNMPA/LMAP状态管理：lnmp {start|stop|reload|restart|kill|status}<br>
+Nginx状态管理：lnmp nginx或/etc/init.d/nginx {start|stop|reload|restart}<br>
+MySQL状态管理：lnmp mysql或/etc/init.d/mysql {start|stop|restart|reload|force-reload|status}<br>
+MariaDB状态管理：lnmp mariadb或/etc/init.d/mariadb {start|stop|restart|reload|force-reload|status}<br>
+PHP-FPM状态管理：lnmp php-fpm或/etc/init.d/php-fpm {start|stop|quit|restart|reload|logrotate}<br>
+PureFTPd状态管理：lnmp pureftpd或/etc/init.d/pureftpd {start|stop|restart|kill|status}<br>
+Apache状态管理：lnmp httpd或/etc/init.d/httpd {start|stop|restart|graceful|graceful-stop|configtest|status}</p>
+<p>虚拟主机管理<br>
+添加：lnmp vhost add<br>
+删除：lnmp vhost del<br>
+列出：lnmp vhost list<br>
+数据库管理：lnmp database {add|list|edit|del}<br>
+FTP用户管理：lnmp ftp {add|list|edit|del|show}<br>
+SSL添加：lnmp ssl add<br>
+通配符/泛域名SSL添加：lnmp dnsssl {cx|ali|cf|dp|he|gd|aws} 需依赖域名dns api</p>
+<p>相关图形界面<br>
+PHPMyAdmin：http://yourIP/phpmyadmin/<br>
+phpinfo：http://yourIP/phpinfo.php<br>
+PHP探针：http://yourIP/p.php<br>
+Xcache管理界面：http://yourIP/xcache/<br>
+Zend Opcache管理界面：http://yourIP/ocp.php<br>
+apcu管理界面：http://yourIP/apc.php</p>
+<p>目录位置<br>
+Nginx：/usr/local/nginx/<br>
+MySQL：/usr/local/mysql/<br>
+MariaDB：/usr/local/mariadb/<br>
+PHP：/usr/local/php/<br>
+多PHP目录：/usr/local/php5.6/ 版本号随安装版本不同而不同<br>
+PHP扩展插件配置文件目录：/usr/local/php/conf.d/<br>
+PHPMyAdmin：/home/wwwroot/default/phpmyadmin/<br>
+默认虚拟主机网站目录：/home/wwwroot/default/<br>
+Nginx日志目录：/home/wwwlogs/</p>
+<p>配置文件：<br>
+Nginx主配置文件：/usr/local/nginx/conf/nginx.conf<br>
+MySQL/MariaDB配置文件：/etc/my.cnf<br>
+PHP配置文件：/usr/local/php/etc/php.ini<br>
+PHP-FPM配置文件：/usr/local/php/etc/php-fpm.conf<br>
+PureFtpd配置文件：/usr/local/pureftpd/etc/pure-ftpd.conf<br>
+Apache配置文件：/usr/local/apache/conf/httpd.conf</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[《良心到难以置信的网站推荐》]]></title>
+        <id>https://hallwizard.gitee.io/post/lesslessliang-xin-dao-nan-yi-zhi-xin-de-wang-zhan-tui-jian-greatergreater/</id>
+        <link href="https://hallwizard.gitee.io/post/lesslessliang-xin-dao-nan-yi-zhi-xin-de-wang-zhan-tui-jian-greatergreater/">
+        </link>
+        <updated>2021-10-05T08:30:48.000Z</updated>
+        <content type="html"><![CDATA[<p>B站博主 -LKs- 《良心到难以置信的网站推荐》<br>
+https://xiangjianan.gitee.io/lks/</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[PDF 转 WORD的好用网站]]></title>
+        <id>https://hallwizard.gitee.io/post/pdf-zhuan-word-de-hao-yong-wang-zhan/</id>
+        <link href="https://hallwizard.gitee.io/post/pdf-zhuan-word-de-hao-yong-wang-zhan/">
+        </link>
+        <updated>2021-10-05T08:21:05.000Z</updated>
+        <content type="html"><![CDATA[<p>PDF 转 WORD<br>
+https://pdf2docx.com/zh/<br>
+http://pdfdo.com/pdf-to-word.aspx</p>
+<p>PDF文字批量替换<br>
+https://app.xunjiepdf.com/pdfreplace/</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[人口预测研究]]></title>
+        <id>https://hallwizard.gitee.io/post/ren-kou-yan-jiu-ke-pu/</id>
+        <link href="https://hallwizard.gitee.io/post/ren-kou-yan-jiu-ke-pu/">
+        </link>
+        <updated>2021-10-04T17:17:27.000Z</updated>
+        <content type="html"><![CDATA[<p>路财主<br>
+做硬核有干货的财经科普。货币金融科普系列，人口系列更新中……不定期转载分享优质内容<br>
+https://space.bilibili.com/10942353?spm_id_from=333.788.b_765f7570696e666f.2</p>
+<p>https://www.bilibili.com/video/BV1JU4y157Dx</p>
+<p>https://www.bilibili.com/video/BV19U4y1b7X5?spm_id_from=333.999.0.0</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[财经新闻推送]]></title>
+        <id>https://hallwizard.gitee.io/post/cai-jing-xin-wen-tui-song/</id>
+        <link href="https://hallwizard.gitee.io/post/cai-jing-xin-wen-tui-song/">
+        </link>
+        <updated>2021-10-04T11:05:16.000Z</updated>
+        <content type="html"><![CDATA[<p>货币净投放与净回笼<br>
+http://www.chinamoney.com.cn/chinese/hb/</p>
+<p>上证50权重-问财<br>
+http://www.iwencai.com/stockpick/search?typed=1&amp;preParams=&amp;ts=1&amp;f=1&amp;qs=index_rewrite&amp;selfsectsn=&amp;querytype=stock&amp;searchfilter=&amp;tid=stockpick&amp;w=%E4%B8%8A%E8%AF%8150%E6%9D%83%E9%87%8D</p>
+<p>股指期货仓单<br>
+http://data.eastmoney.com/IF/Data/Contract.html?va=IH</p>
+<p>萝卜投研<br>
+https://robo.datayes.com/</p>
+<p>Tushare资讯数据<br>
+https://tushare.pro/news</p>
+<p>金融界 7*24小时财经要闻滚动<br>
+http://finance.jrj.com.cn/yaowen/<br>
+大盘云图<br>
+http://summary.jrj.com.cn/dpyt/</p>
+<p>云财经<br>
+https://www.yuncaijing.com/</p>
+<p>选股宝<br>
+https://xuangubao.cn/</p>
+<p>见智研究<br>
+https://vip.jianshiapp.com/live</p>
+<p>微博舆情<br>
+https://touzi.sina.com.cn/public/wbyq</p>
+<p>财联社电报<br>
+https://www.cls.cn/telegraph</p>
+<p>今日热榜<br>
+https://tophub.today/</p>
+<p>鱼塘热榜<br>
+https://mo.fish/</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[财经数据接口整理]]></title>
+        <id>https://hallwizard.gitee.io/post/cai-jing-shu-ju-jie-kou-zheng-li/</id>
+        <link href="https://hallwizard.gitee.io/post/cai-jing-shu-ju-jie-kou-zheng-li/">
+        </link>
+        <updated>2021-10-04T10:24:39.000Z</updated>
+        <content type="html"><![CDATA[<p>Tushare<br>
+https://tushare.pro/<br>
+https://tushare.pro/news/</p>
+<p>GoPUP<br>
+https://github.com/justinzm/gopup<br>
+http://www.gopup.cn/</p>
+<p>AKShare<br>
+https://www.akshare.xyz/</p>
+<p>TqSdk（需要pycharm环境）<br>
+https://www.shinnytech.com/tianqin/</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[【教程】最新注册freenom免费域名的方法]]></title>
+        <id>https://hallwizard.gitee.io/post/jiao-cheng-zui-xin-zhu-ce-freenom-mian-fei-yu-ming-de-fang-fa/</id>
+        <link href="https://hallwizard.gitee.io/post/jiao-cheng-zui-xin-zhu-ce-freenom-mian-fei-yu-ming-de-fang-fa/">
+        </link>
+        <updated>2021-10-04T06:47:39.000Z</updated>
+        <content type="html"><![CDATA[<p>等有空注册几个域名，把blog绑定过去。<br>
+今天算了，懒，等多写几个blog再说吧</p>
+<p>感谢下面博客的技术支持<br>
+域名注册<br>
+https://zhuanlan.zhihu.com/p/115535965</p>
+<p>还有域名自动续期的方法<br>
+Freenom：freenom域名自动续期<br>
+https://github.com/luolongfei/next-freenom</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Gitee、Github pages 同步]]></title>
+        <id>https://hallwizard.gitee.io/post/giteegithub-pages-tong-bu/</id>
+        <link href="https://hallwizard.gitee.io/post/giteegithub-pages-tong-bu/">
+        </link>
+        <updated>2021-10-04T06:42:19.000Z</updated>
+        <content type="html"><![CDATA[<p>Github 的blog经测试有些慢，于是想办法移植到Gitee。<br>
+感谢下面博客的技术支持，无缝连接。</p>
+<p>Gridea 支持 Gitee 的临时办法<br>
+https://zhuanlan.zhihu.com/p/296895749</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[First things First]]></title>
+        <id>https://hallwizard.gitee.io/post/first-things-first/</id>
+        <link href="https://hallwizard.gitee.io/post/first-things-first/">
+        </link>
+        <updated>2021-10-03T11:43:49.000Z</updated>
+        <summary type="html"><![CDATA[<p>感谢Happy_Xiao在B站发布的教程：<br>
+https://www.bilibili.com/video/BV1J4411w72a?from=search&amp;seid=2341783892831132438&amp;spm_id_from=333.337.0.0</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>感谢Happy_Xiao在B站发布的教程：<br>
+https://www.bilibili.com/video/BV1J4411w72a?from=search&amp;seid=2341783892831132438&amp;spm_id_from=333.337.0.0</p>
+<!-- more -->
+<p>真的是光速建站，拖延症福音！<br>
+而且blog这个东西，静态界面真的足够了，Wordpress+公有云都显得麻烦。<br>
+尝试在这个blog上整理一些学过的知识，尽量做得久一点。</p>
+<p>(｡･∀･)ﾉﾞ嗨，开始吧，不在文字上绞尽脑汁的费力了，做个简单的blog。</p>
+]]></content>
+    </entry>
+</feed>

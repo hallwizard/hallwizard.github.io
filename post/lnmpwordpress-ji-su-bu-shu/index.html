@@ -1,0 +1,220 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    
+<meta charset="utf-8" >
+
+<title>Lnmp+Wordpress急速部署 | hallwizard</title>
+<meta name="description" content="Talk is cheap, Just do it!">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://hallwizard.gitee.io/favicon.ico?v=1633502626910">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://hallwizard.gitee.io/styles/main.css">
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+  </head>
+  <body>
+    <div id="app" class="main">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://hallwizard.gitee.io">
+        <img class="avatar" src="https://hallwizard.gitee.io/images/avatar.png?v=1633502626910" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://hallwizard.gitee.io">
+        <h1 class="site-title">hallwizard</h1>
+      </a>
+    </div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
+  </div>
+</div>
+
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
+      
+        
+          <a href="/" class="menu purple-link">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="menu purple-link">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="menu purple-link">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="menu purple-link">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+</transition>
+
+
+      <div class="content-container">
+        <div class="post-detail">
+          
+          <h2 class="post-title">Lnmp+Wordpress急速部署</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2021-10-06</span>
+            
+          </div>
+          <div class="post-content">
+            <p>单机部署，没用上Ansible，lnmp方便<br>
+安装有点慢啊，等有空再想想解决方法<br>
+Install lnmp takes 91 minutes.<br>
+Install lnmp V1.8 completed! enjoy it.</p>
+<ol>
+<li></li>
+</ol>
+<p>先配置网卡，保障虚拟机联网:<br>
+vi /etc/sysconfig/network-scripts/ifcfg-eno16777736<br>
+增加网关和DNS：<br>
+GATEWAY=192.168.200.2<br>
+DNS1=8.8.8.8</p>
+<ol start="2">
+<li></li>
+</ol>
+<p>安装lnmp<br>
+参考：<br>
+https://github.com/licess/lnmp</p>
+<p>安装前确认已经安装wget命令，如提示wget: command not found ，使用yum install wget 或 apt-get install wget 命令安装。 为防止掉线等情况，建议使用screen，可以先执行：screen -S lnmp 命令后，再执行LNMP安装命令： wget http://soft.vpser.net/lnmp/lnmp1.8.tar.gz -cO lnmp1.8.tar.gz &amp;&amp; tar zxf lnmp1.8.tar.gz &amp;&amp; cd lnmp1.8 &amp;&amp; ./install.sh {lnmp|lnmpa|lamp}</p>
+<ol start="3">
+<li></li>
+</ol>
+<p>安装Wordpress<br>
+下载wordpress 上传 解压<br>
+unzip wordpress-5.8.1-zh_CN.zip<br>
+mkdir /home/wwwroot/default/wordpress<br>
+mv wordpress/* /home/wwwroot/default/wordpress/<br>
+登录网页<br>
+http://yourIP/wordpress<br>
+完成设置<br>
+如果无法写入wp-config.php<br>
+vi /home/wwwroot/default/wordpress/wp-config.php<br>
+将网页内容复制写入，后面加上?&gt;<br>
+成功</p>
+<p>还是挺简单，之前研究html+css+js，前端没学会，学会了爬虫，没想到wordpress这么好用，早点入坑好了，安装完成，接下来慢慢研究。</p>
+<p>附：<br>
+lnmp常用管理命令<br>
+状态管理<br>
+LNMP/LNMPA/LMAP状态管理：lnmp {start|stop|reload|restart|kill|status}<br>
+Nginx状态管理：lnmp nginx或/etc/init.d/nginx {start|stop|reload|restart}<br>
+MySQL状态管理：lnmp mysql或/etc/init.d/mysql {start|stop|restart|reload|force-reload|status}<br>
+MariaDB状态管理：lnmp mariadb或/etc/init.d/mariadb {start|stop|restart|reload|force-reload|status}<br>
+PHP-FPM状态管理：lnmp php-fpm或/etc/init.d/php-fpm {start|stop|quit|restart|reload|logrotate}<br>
+PureFTPd状态管理：lnmp pureftpd或/etc/init.d/pureftpd {start|stop|restart|kill|status}<br>
+Apache状态管理：lnmp httpd或/etc/init.d/httpd {start|stop|restart|graceful|graceful-stop|configtest|status}</p>
+<p>虚拟主机管理<br>
+添加：lnmp vhost add<br>
+删除：lnmp vhost del<br>
+列出：lnmp vhost list<br>
+数据库管理：lnmp database {add|list|edit|del}<br>
+FTP用户管理：lnmp ftp {add|list|edit|del|show}<br>
+SSL添加：lnmp ssl add<br>
+通配符/泛域名SSL添加：lnmp dnsssl {cx|ali|cf|dp|he|gd|aws} 需依赖域名dns api</p>
+<p>相关图形界面<br>
+PHPMyAdmin：http://yourIP/phpmyadmin/<br>
+phpinfo：http://yourIP/phpinfo.php<br>
+PHP探针：http://yourIP/p.php<br>
+Xcache管理界面：http://yourIP/xcache/<br>
+Zend Opcache管理界面：http://yourIP/ocp.php<br>
+apcu管理界面：http://yourIP/apc.php</p>
+<p>目录位置<br>
+Nginx：/usr/local/nginx/<br>
+MySQL：/usr/local/mysql/<br>
+MariaDB：/usr/local/mariadb/<br>
+PHP：/usr/local/php/<br>
+多PHP目录：/usr/local/php5.6/ 版本号随安装版本不同而不同<br>
+PHP扩展插件配置文件目录：/usr/local/php/conf.d/<br>
+PHPMyAdmin：/home/wwwroot/default/phpmyadmin/<br>
+默认虚拟主机网站目录：/home/wwwroot/default/<br>
+Nginx日志目录：/home/wwwlogs/</p>
+<p>配置文件：<br>
+Nginx主配置文件：/usr/local/nginx/conf/nginx.conf<br>
+MySQL/MariaDB配置文件：/etc/my.cnf<br>
+PHP配置文件：/usr/local/php/etc/php.ini<br>
+PHP-FPM配置文件：/usr/local/php/etc/php-fpm.conf<br>
+PureFtpd配置文件：/usr/local/pureftpd/etc/pure-ftpd.conf<br>
+Apache配置文件：/usr/local/apache/conf/httpd.conf</p>
+
+          </div>
+        </div>
+
+        
+          <div class="next-post">
+            <a class="purple-link" href="https://hallwizard.gitee.io/post/lesslessliang-xin-dao-nan-yi-zhi-xin-de-wang-zhan-tui-jian-greatergreater/">
+              <h3 class="post-title">
+                下一篇：《良心到难以置信的网站推荐》
+              </h3>
+            </a>
+          </div>
+          
+      </div>
+
+      
+
+      <div class="site-footer">
+  <div class="slogan">Talk is cheap, Just do it!</div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://hallwizard.gitee.io/atom.xml" target="_blank">RSS</a>
+</div>
+
+
+    </div>
+    <script type="application/javascript">
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+  </body>
+</html>
