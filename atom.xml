@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://hallwizard.gitee.io</id>
     <title>hallwizard</title>
-    <updated>2021-10-06T06:47:59.508Z</updated>
+    <updated>2021-10-10T16:52:23.413Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://hallwizard.gitee.io"/>
     <link rel="self" href="https://hallwizard.gitee.io/atom.xml"/>
@@ -10,6 +10,99 @@
     <logo>https://hallwizard.gitee.io/images/avatar.png</logo>
     <icon>https://hallwizard.gitee.io/favicon.ico</icon>
     <rights>All rights reserved 2021, hallwizard</rights>
+    <entry>
+        <title type="html"><![CDATA[GTmetrix，PageSpeed Insights 在线网站加载速度测试工具]]></title>
+        <id>https://hallwizard.gitee.io/post/gtmetrixzai-xian-wang-zhan-jia-zai-su-du-ce-shi-gong-ju/</id>
+        <link href="https://hallwizard.gitee.io/post/gtmetrixzai-xian-wang-zhan-jia-zai-su-du-ce-shi-gong-ju/">
+        </link>
+        <updated>2021-10-10T15:26:08.000Z</updated>
+        <content type="html"><![CDATA[<p>GTmetrix，是国外一款在线网站加载速度测试工具，并为站长提供优化性能分析，主要有PageSpeed和YSlow两部分组成，并提供相应的得分数据，能够真实的反应出网站的性能，并且会提供可行性建议来帮助你改善你的网站性能。</p>
+<p>https://gtmetrix.com/</p>
+<p>PageSpeed Insights 简介<br>
+PageSpeed Insights 能够针对移动设备和桌面设备生成网页的实际性能报告，并能够提供关于如何改进相应网页的建议。</p>
+<p>https://developers.google.cn/speed/pagespeed/insights/</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[82个WordPress主题 Avada Demo 演示网站 截止2021年4月14日 Avada7.3]]></title>
+        <id>https://hallwizard.gitee.io/post/82-ge-wordpress-zhu-ti-avada-demo-yan-shi-wang-zhan-jie-zhi-2021-nian-4-yue-14-ri-avada73/</id>
+        <link href="https://hallwizard.gitee.io/post/82-ge-wordpress-zhu-ti-avada-demo-yan-shi-wang-zhan-jie-zhi-2021-nian-4-yue-14-ri-avada73/">
+        </link>
+        <updated>2021-10-10T15:15:21.000Z</updated>
+        <content type="html"><![CDATA[<p>来自achair的宝箱的干货<br>
+https://achair.cn/9352.html</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Vue初识]]></title>
+        <id>https://hallwizard.gitee.io/post/vue-chu-shi/</id>
+        <link href="https://hallwizard.gitee.io/post/vue-chu-shi/">
+        </link>
+        <updated>2021-10-10T15:07:13.000Z</updated>
+        <content type="html"><![CDATA[<p>最近密集研究建站<br>
+接触了不少新概念<br>
+感叹需要学的东西真不少</p>
+<p>查了一圈搞懂了Vue框架的感念，懂了就好，以后用上再学。</p>
+<p>什么是MVVM？MVVM是Model-View-ViewModel的缩写。<br>
+要编写可维护的前端代码绝非易事。我们已经用MVC模式通过koa实现了后端数据、模板页面和控制器的分离，但是，对于前端来说，还不够。<br>
+第一阶段，直接用JavaScript操作DOM节点，使用浏览器提供的原生API：<br>
+第二阶段，由于原生API不好用，还要考虑浏览器兼容性，jQuery横空出世，以简洁的API迅速俘获了前端开发者的芳心：<br>
+第三阶段，MVC模式，需要服务器端配合，JavaScript可以在前端修改服务器渲染后的数据。如Angular,Vue,React等，实现了数据双向绑定，极大的提高了开发效率。</p>
+<p>这个教程不错，主要是概念讲的清，后面没看<br>
+快速撸懂 Vue 全家桶<br>
+https://www.bilibili.com/video/BV14K411F744?from=search&amp;seid=15386878705458062565</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[achair的宝箱]]></title>
+        <id>https://hallwizard.gitee.io/post/achair-de-bao-xiang/</id>
+        <link href="https://hallwizard.gitee.io/post/achair-de-bao-xiang/">
+        </link>
+        <updated>2021-10-10T14:59:57.000Z</updated>
+        <content type="html"><![CDATA[<p>今天刷到了篇文章《有人花几万元买我的个人网站，几十块钱的域名，为什么能卖几万？》<br>
+文章没什么，题目也是震惊体，能推送到我这来估计也是博主做了推广<br>
+不过，我登陆了文章里的域名仔细看了以下，wordpress建站干货很多，而且视频不长，容易接受<br>
+赶紧Mark一下</p>
+<p>https://achair.cn/</p>
+<p>今天刷了40页，先挑干货看一看：</p>
+<p>所有免费WordPress教程，都在这里！（2020年9月）<br>
+https://achair.cn/11361.html<br>
+在WordPress网站上实现付费阅读容易，办许可证难<br>
+https://achair.cn/10173.html<br>
+哪些中文字体可以免费商用?<br>
+https://achair.cn/9596.html<br>
+用Elementor插件和ASTRA主题，构建“免费”WordPress网站<br>
+https://achair.cn/13947.html<br>
+82个WordPress主题 Avada Demo 演示网站 截止2021年4月14日 Avada7.3<br>
+https://achair.cn/9352.html<br>
+《用WordPress网站做微信小程序》免费开源版经验分享<br>
+https://achair.cn/10068.html<br>
+《Elementor插件和Astra主题安装教程》WordPress外贸网站视频教程<br>
+https://achair.cn/14751.html<br>
+《宝塔Linux面板新手使用教程》治疗不会配置服务器<br>
+https://achair.cn/9802.html<br>
+WordPress建站常见问题－购买相关<br>
+https://achair.cn/9441.html<br>
+《网站验收文档》网站上线前后要检查的清单 2021年8月<br>
+https://achair.cn/15915.html<br>
+从架构根源为avada究极加速，Centos7系统搭建openresty+php7+mariadb+redis环境<br>
+https://achair.cn/9023.html<br>
+500个BeTheme主题的Demo演示站<br>
+https://achair.cn/13538.html<br>
+WordPress商业主题禁用谷歌字体fonts.googleapis.com的全面解决方案<br>
+https://achair.cn/2445.html<br>
+做一个网站至少要了解26个知识点<br>
+https://achair.cn/2009.html<br>
+提升WordPress 速度全面解决方案（以Avada为例）<br>
+https://achair.cn/4387.html<br>
+建外贸独立站，甲方提供哪些资料？模板文档 achair经验谈Vol.7<br>
+https://achair.cn/14988.html<br>
+免费的WordPress图片优化压缩插件 reSmush.it（支持后台自动批处理）<br>
+https://achair.cn/12852.html<br>
+分享三种WordPress网站备份的方法，适合日常备份、网站搬家 （视频教程）<br>
+https://achair.cn/15435.html</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Lnmp+Wordpress急速部署]]></title>
         <id>https://hallwizard.gitee.io/post/lnmpwordpress-ji-su-bu-shu/</id>
@@ -103,6 +196,8 @@ Apache配置文件：/usr/local/apache/conf/httpd.conf</p>
         <updated>2021-10-05T08:30:48.000Z</updated>
         <content type="html"><![CDATA[<p>B站博主 -LKs- 《良心到难以置信的网站推荐》<br>
 https://xiangjianan.gitee.io/lks/</p>
+<p>资源网站推荐 篇九：这15个免费网站，帮你找到你想要的所有资源，<br>
+https://post.smzdm.com/p/ar6523gq/</p>
 ]]></content>
     </entry>
     <entry>
@@ -183,52 +278,6 @@ http://www.gopup.cn/</p>
 https://www.akshare.xyz/</p>
 <p>TqSdk（需要pycharm环境）<br>
 https://www.shinnytech.com/tianqin/</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[【教程】最新注册freenom免费域名的方法]]></title>
-        <id>https://hallwizard.gitee.io/post/jiao-cheng-zui-xin-zhu-ce-freenom-mian-fei-yu-ming-de-fang-fa/</id>
-        <link href="https://hallwizard.gitee.io/post/jiao-cheng-zui-xin-zhu-ce-freenom-mian-fei-yu-ming-de-fang-fa/">
-        </link>
-        <updated>2021-10-04T06:47:39.000Z</updated>
-        <content type="html"><![CDATA[<p>等有空注册几个域名，把blog绑定过去。<br>
-今天算了，懒，等多写几个blog再说吧</p>
-<p>感谢下面博客的技术支持<br>
-域名注册<br>
-https://zhuanlan.zhihu.com/p/115535965</p>
-<p>还有域名自动续期的方法<br>
-Freenom：freenom域名自动续期<br>
-https://github.com/luolongfei/next-freenom</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Gitee、Github pages 同步]]></title>
-        <id>https://hallwizard.gitee.io/post/giteegithub-pages-tong-bu/</id>
-        <link href="https://hallwizard.gitee.io/post/giteegithub-pages-tong-bu/">
-        </link>
-        <updated>2021-10-04T06:42:19.000Z</updated>
-        <content type="html"><![CDATA[<p>Github 的blog经测试有些慢，于是想办法移植到Gitee。<br>
-感谢下面博客的技术支持，无缝连接。</p>
-<p>Gridea 支持 Gitee 的临时办法<br>
-https://zhuanlan.zhihu.com/p/296895749</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[First things First]]></title>
-        <id>https://hallwizard.gitee.io/post/first-things-first/</id>
-        <link href="https://hallwizard.gitee.io/post/first-things-first/">
-        </link>
-        <updated>2021-10-03T11:43:49.000Z</updated>
-        <summary type="html"><![CDATA[<p>感谢Happy_Xiao在B站发布的教程：<br>
-https://www.bilibili.com/video/BV1J4411w72a?from=search&amp;seid=2341783892831132438&amp;spm_id_from=333.337.0.0</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>感谢Happy_Xiao在B站发布的教程：<br>
-https://www.bilibili.com/video/BV1J4411w72a?from=search&amp;seid=2341783892831132438&amp;spm_id_from=333.337.0.0</p>
-<!-- more -->
-<p>真的是光速建站，拖延症福音！<br>
-而且blog这个东西，静态界面真的足够了，Wordpress+公有云都显得麻烦。<br>
-尝试在这个blog上整理一些学过的知识，尽量做得久一点。</p>
-<p>(｡･∀･)ﾉﾞ嗨，开始吧，不在文字上绞尽脑汁的费力了，做个简单的blog。</p>
 ]]></content>
     </entry>
 </feed>
